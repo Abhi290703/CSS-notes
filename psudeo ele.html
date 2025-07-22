@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo</title>
+    <style>
+        h1::after{
+            content: "combination";
+            color: blueviolet;
+        }
+        h1::before{
+            content: "  Hello";
+            color: darkgoldenrod;
+        }
+        h1::first-letter{
+            color: cyan;
+        }
+        p::first-letter{
+            color: red;
+        }
+        input::placeholder{
+            font-style: italic;
+            color:lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>psuedo elements</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias harum necessitatibus, molestiae inventore accusamus nam deserunt veritatis ab nesciunt nostrum voluptatum laudantium aperiam error asperiores quia perferendis saepe omnis.
+        Est officiis iusto enim sapiente odit porro at, nostrum explicabo beatae eveniet, esse commodi ad deleniti id quasi inventore quod temporibus nemo laborum suscipit! Pariatur rerum voluptates vitae eligendi eius!
+        Nisi molestiae explicabo, quisquam a voluptas, quod illo maxime ea rem possimus, reprehenderit assumenda quia aperiam eum! Aut porro reiciendis culpa quis voluptatibus, praesentium veniam at earum, quidem quos similique.
+    </p>
+    <input type="text" placeholder="enter your name">
+</body>
+</html>
