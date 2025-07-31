@@ -1,4 +1,10 @@
 @media screen and (min-width: 768px) and (max-width: 1440px) {
+  
+  body{
+    background-image: url("../layouts/Assests/black.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
   .head {
     display: flex;
     justify-content: space-between;
