@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip card</title>
+    <style>
+        .front{
+            color: white;
+            background-color: red;
+        }
+        .back{
+            color:white;
+            background-color: green;
+            transform: rotateY(180deg);
+        }
+        .cardcontainer{
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        .flipcard{
+           width: 100%;
+           height: 100%;
+           /* display: flex; */
+           transition: all 0.8s ease;
+           transform-style: preserve-3d;
+        }
+        .cardface{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            text-align: center;
+            align-content: center;
+        }
+        .cardcontainer:hover .flipcard{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="cardcontainer">
+        <div class="flipcard">
+            <div class="cardface front">Front</div>
+             <div class="cardface back">Back</div>
+        </div>
+    </div>
+</body>
+</html>
