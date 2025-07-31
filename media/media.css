@@ -13,6 +13,7 @@
     border: 2px solid black;
     position: sticky;
     top: 10px;
+    z-index: 999;
   }
 
   .linkcontainer {
@@ -43,6 +44,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    /* transform: rotateY('angle'); */
+    gap: 20px;
+    margin-top: 30px;
   }
 
   .items {
@@ -57,7 +61,7 @@
     transition: background-color 0.3s ease;
   }
 
-  .items:hover {
+  /* .items:hover {
     background-color:cornflowerblue;
     animation: itemAnim 1s ease 0s infinite normal;
   }
@@ -71,6 +75,44 @@
       transform: translateY(25px);
       border-radius: 5px;
     }
+  } */
+
+  .front{
+    color: white;
+    background-color:darkslategrey;
+  }
+
+  .back{
+    color: white;
+    background-color: gainsboro;
+    transform: rotateY(180deg);
+  }
+
+  .cardcontainer{
+     width: 200px;
+      height: 200px;
+     perspective: 1000px;
+  }
+
+  .flipcard{
+    width: 100%;
+     height: 100%;
+    /* display: flex; */
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .cardface{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    align-content: center;
+  }
+
+  .cardcontainer:hover .flipcard{
+    transform: rotateY(180deg);
   }
 
   footer {
@@ -119,7 +161,7 @@
     align-content: center;
   }
 
-  .items {
+  /* .items {
     width: 100px;
     height: 100px;
      background-color: burlywood;
@@ -144,7 +186,45 @@
     50% {
       transform: translateY(25px);
       border-radius: 0px;
-    }
+    } */
+  
+
+.front{
+    color: white;
+    background-color:darkslategrey;
+  }
+
+  .back{
+    color: white;
+    background-color: gainsboro;
+    transform: rotateY(180deg);
+  }
+
+  .cardcontainer{
+     width: 200px;
+      height: 200px;
+     perspective: 1000px;
+  }
+
+  .flipcard{
+    width: 100%;
+     height: 100%;
+    /* display: flex; */
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .cardface{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    align-content: center;
+  }
+
+  .cardcontainer:hover .flipcard{
+    transform: rotateY(180deg);
   }
 
   footer {
