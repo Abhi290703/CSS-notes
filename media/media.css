@@ -29,6 +29,8 @@
     border: 3px solid black;
     gap: 10px;
     border-radius: 20px;
+    /* width: 100px;
+    height: 100px; */
   }
 
   .productcontainer {
@@ -43,7 +45,7 @@
     background-color: burlywood;
     color: white;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     align-content: center;
     transition: background-color 0.3s ease;
